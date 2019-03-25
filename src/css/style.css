@@ -1,0 +1,44 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background__section {
+    width: 75%;
+    background-image: url("../images/bg-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0 20px;
+}
+
+.footer__menu-link {
+    display: inline-block;
+    padding: 5px;
+    color: #6b6765;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}

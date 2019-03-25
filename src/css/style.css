@@ -21,7 +21,7 @@ html {
 .footer {
     position: absolute;
     bottom: 0;
-    width: 75%;
+    width: 62%;
     background: rgba(255, 255, 255, 0.75);
 }
 
@@ -38,7 +38,84 @@ html {
     display: inline-block;
     padding: 5px;
     color: #6b6765;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.content-side {
+    background-color: #fc5095;
+    border-left: 14px solid #fc5095;
+    /*right: 0;*/
+}
+
+.content-side::before {
+    display: block;
+    background-color: #fc5095;
+    content: '';
+    height: 15%;
+    width: 100%;
+}
+
+.content-side__information {
+    /*color: white;*/
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    padding: 13rem 7rem 9rem 6rem;
+}
+
+.content-side__information-title {
+    font-size: 3.5rem;
+    color: #fc5095;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.content-side__information-text {
+    /*position: absolute;*/
+    margin: 1.5rem 0 5rem 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.content-side__information-start-confirmation {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+
+.content-side__information::before {
+    font-family: "Font Awesome 5 Free", serif;
+    content: "\f004";
+    color: #fc5095;
+    background-color: #fff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+    line-height: 6.5rem;
+    box-sizing: border-box;
+    border: 0.8rem solid #fc5095;
+    border-radius: 50%;
+    position: absolute;
+    left: -5rem;
+    top: 11rem;
+}
+
+.content-side__information-start-ready {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    background-color: #fc5095;
+    color: white;
+    font-weight: 700;
+    box-sizing: border-box;
+    border-radius: 2.5rem;
+    font-size: 3rem;
+    width: 18rem;
+    height: 7rem;
 }

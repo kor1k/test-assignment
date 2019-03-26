@@ -45,7 +45,7 @@ html {
     font-weight: bold;
 }
 
-.content-side {
+.content-side-main {
     display: flex;
     /*justify-content: center;*/
     flex-direction: column;
@@ -55,7 +55,7 @@ html {
     padding: 10rem 0 0 3rem;
 }
 
-.content-side__title {
+.content-side-main__title {
     margin-top: 4rem;
     font-weight: 700;
     color: #fc5095;
@@ -64,7 +64,7 @@ html {
     position: relative;
 }
 
-.content-side__title::before {
+.content-side-main__title::before {
     font-family: "Font Awesome 5 Free", serif;
     content: "\f004";
     color: #fc5095;
@@ -83,7 +83,7 @@ html {
     top: -2rem;
 }
 
-.content-side__title-secondary {
+.content-side-main__title-secondary {
     /*margin-top: 2rem;*/
     margin: 2rem 0 10rem 0;
     display: flex;
@@ -92,7 +92,7 @@ html {
     font-size: 2rem;
 }
 
-.content-side__title-before-start {
+.content-side-main__title-before-start {
     /*margin-top: 8rem;*/
     /*display: flex;*/
     font-weight: 700;
@@ -102,7 +102,7 @@ html {
     margin-bottom: 2rem;
 }
 
-.content-side__before-start-button {
+.content-side-main__before-start-button {
     display: flex;
     justify-content: center;
     align-items: center;

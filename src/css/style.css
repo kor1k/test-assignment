@@ -13,7 +13,7 @@ html {
 
 .background__section__test-color {
     /*background-image: url("../images/bg-image.png");*/
-    background-color: rgba(252, 137, 80, 0.4);
+    background-color: rgba(252, 137, 80, 0.4) !important;
     /*width: 75%;*/
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
@@ -85,6 +85,8 @@ html {
     margin: 1.5rem 0 5rem 0;
     text-transform: uppercase;
     font-size: 1.5rem;
+    width: 30rem;
+    line-height: 2.5rem;
 }
 
 .content-side__information-start-confirmation {
@@ -147,19 +149,36 @@ html {
     padding: 8rem 0 0 4rem;
 }
 
-.first__choose-variants-information::before {
-    color: #fc8950;
-}
+/*.first__choose-variants-information::before {*/
+/*!*font-family: "Font Awesome 5 Free", serif;*!*/
+/*!*content: "\f004";*!*/
+/*color: #fc5095;*/
+/*background-color: #fff;*/
+/*!*font-size: 3.5rem;*!*/
+/*!*font-weight: 900;*!*/
+/*!*height: 8rem;*!*/
+/*!*width: 8rem;*!*/
+/*!*text-align: center;*!*/
+/*!*line-height: 6.5rem;*!*/
+/*!*box-sizing: border-box;*!*/
+/*!*border: 0.8rem solid #fc5095;*!*/
+/*!*border-radius: 50%;*!*/
+/*position: absolute;*/
+/*left: -5rem;*/
+/*top: 8rem;*/
 
-.first__choose-variants-information {
+/*}*/
 
-}
+/*.first__choose-variants-information {*/
+
+/*}*/
 
 .first__choose-variants-information-text {
     background-color: #f6f5f5;
     font-size: 2rem;
     color: #fc8950;
     font-weight: 500;
+    width: 40rem;
 }
 
 .first__choose-variants-information-text::before {
@@ -190,24 +209,43 @@ html {
     box-sizing: border-box;
     background-color: white;
     border: 1px solid white;
-    width: 17rem;
-    height: 6rem;
+    width: 20rem;
+    height: 5rem;
     border-radius: 1rem;
 }
 
 .choose__variant__next-section {
-    /*display: none;*/
-    display: flex;
+    display: none;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     background-color: #fc8950;
+    margin: 5rem 0 0 2rem;
+    /*margin-left: 2rem;*/
     color: white;
     border: 1px solid white;
     width: 17rem;
     height: 6rem;
     border-radius: 1rem;
+    text-transform: uppercase;
+    /*font-family: 'Open Sans',sans-serif;*/
 }
 
 /*.clicked-button {*/
 /*background-color: red;*/
 /*}*/
+
+.test_percent_and_choosed-variant-text_a, .test_percent_and_choosed-variant-text_b, .test_percent_and_choosed-variant-text_v {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    font-weight: 800;
+    color: white;
+}
+
+.reg-form {
+    /*display: none;*/
+    height: 100vh;
+}

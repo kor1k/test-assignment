@@ -172,7 +172,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 0.5rem;
     width: 17rem;
     height: 5rem;
     border: 1px solid gray;
@@ -180,7 +180,22 @@ html {
     background: white;
     font-size: 2rem;
     color: black;
+}
 
+.content-side-options__button-next-content-side {
+    margin: 2rem 0.5rem 0 0.5rem;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /*margin: 0.5rem;*/
+    width: 20rem;
+    height: 5rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: #fc8950;
+    font-size: 2rem;
+    color: white;
 }
 
 

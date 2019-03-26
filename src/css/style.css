@@ -3,16 +3,142 @@ html {
     font-size: 10px;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .background-wrapper {
+    display: flex;
+    /*justify-content: center;*/
     background-image: url("../images/bg-image.png");
     width: 75%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: right;
+    background-position: center;
+    /*background-position: right 35% bottom 45%;*/
 }
 
-.test_content {
-    text-align: right;
-    width: 25%;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 73%;
+    background: rgba(255, 255, 255, 0.75);
 }
+
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0 20px;
+}
+
+.footer__menu-link {
+    display: inline-block;
+    padding: 5px;
+    color: #6b6765;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-side {
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    /*text-align: right;*/
+    width: 25%;
+    border-left: 1.2rem solid #fc5095;
+    padding: 10rem 0 0 3rem;
+}
+
+.content-side__title {
+    margin-top: 4rem;
+    font-weight: 700;
+    color: #fc5095;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.content-side__title::before {
+    font-family: "Font Awesome 5 Free", serif;
+    content: "\f004";
+    color: #fc5095;
+    background-color: #fff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    line-height: 6rem;
+    box-sizing: border-box;
+    border: 0.8rem solid #fc5095;
+    border-radius: 50%;
+    position: absolute;
+    left: -7.5rem;
+    top: -2rem;
+}
+
+.content-side__title-secondary {
+    /*margin-top: 2rem;*/
+    margin: 2rem 0 10rem 0;
+    display: flex;
+    width: 24rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.content-side__title-before-start {
+    /*margin-top: 8rem;*/
+    /*display: flex;*/
+    font-weight: 700;
+    width: 24rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content-side__before-start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #fc5095;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 3rem;
+}
+
+/*.content-side__information {*/
+/*!*color: white;*!*/
+/*background-color: white;*/
+/*height: 100vh;*/
+/*position: relative;*/
+/*padding: 5rem 7rem 9rem 6rem;*/
+/*}*/
+
+/*.content-side__information::before {*/
+/*font-family: "Font Awesome 5 Free", serif;*/
+/*content: "\f004";*/
+/*color: #fc5095;*/
+/*background-color: #fff;*/
+/*font-size: 3.5rem;*/
+/*font-weight: 900;*/
+/*height: 8rem;*/
+/*width: 8rem;*/
+/*text-align: center;*/
+/*line-height: 6.5rem;*/
+/*box-sizing: border-box;*/
+/*border: 0.8rem solid #fc5095;*/
+/*border-radius: 50%;*/
+/*position: absolute;*/
+/*left: -5rem;*/
+/*top: 11rem;*/
+/*}*/
+

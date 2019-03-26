@@ -45,6 +45,8 @@ html {
     font-weight: bold;
 }
 
+/*__________________main-pink-section  start_________________________*/
+
 .content-side-main {
     display: flex;
     /*justify-content: center;*/
@@ -115,30 +117,6 @@ html {
     border-radius: 3rem;
 }
 
-/*.content-side__information {*/
-/*!*color: white;*!*/
-/*background-color: white;*/
-/*height: 100vh;*/
-/*position: relative;*/
-/*padding: 5rem 7rem 9rem 6rem;*/
-/*}*/
+/*__________________main-pink-section  end_________________________*/
 
-/*.content-side__information::before {*/
-/*font-family: "Font Awesome 5 Free", serif;*/
-/*content: "\f004";*/
-/*color: #fc5095;*/
-/*background-color: #fff;*/
-/*font-size: 3.5rem;*/
-/*font-weight: 900;*/
-/*height: 8rem;*/
-/*width: 8rem;*/
-/*text-align: center;*/
-/*line-height: 6.5rem;*/
-/*box-sizing: border-box;*/
-/*border: 0.8rem solid #fc5095;*/
-/*border-radius: 50%;*/
-/*position: absolute;*/
-/*left: -5rem;*/
-/*top: 11rem;*/
-/*}*/
 

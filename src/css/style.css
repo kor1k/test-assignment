@@ -55,6 +55,7 @@ html {
     width: 25%;
     border-left: 1.2rem solid #fc5095;
     padding: 10rem 0 0 3rem;
+    box-shadow: -99px 0px 250px -14px rgba(252, 80, 149, 1);
 }
 
 .content-side-main__title {
@@ -206,6 +207,7 @@ html {
 
 /*__________________form-blue-section start_________________________*/
 .content-side-form {
+
     display: flex;
     /*justify-content: center;*/
     flex-direction: column;
@@ -213,6 +215,7 @@ html {
     width: 45%;
     background: #f6f5f5;
     border-left: 1.2rem solid #1da7c0;
+    box-shadow: -99px 0px 250px -14px rgba(29, 167, 192, 1);
     padding: 10rem 0 0 3rem;
 }
 
@@ -307,4 +310,5 @@ html {
     border: 1px solid black;
     border-radius: 1rem;
 }
+
 /*__________________form-blue-section end_________________________*/

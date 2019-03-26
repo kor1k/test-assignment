@@ -203,6 +203,8 @@ html {
 
 /*__________________option-orange-section end_________________________*/
 
+
+/*__________________form-blue-section start_________________________*/
 .content-side-form {
     display: flex;
     /*justify-content: center;*/
@@ -277,6 +279,8 @@ html {
     display: flex;
     justify-content: start;
     align-items: center;
+    width: 31rem;
+    margin: 1rem 0 2rem 0;
 }
 
 .content-side-form__button-next-content-side {
@@ -294,3 +298,13 @@ html {
     font-size: 2rem;
     color: white;
 }
+
+.form {
+    width: 29rem;
+    height: 5rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+/*__________________form-blue-section end_________________________*/

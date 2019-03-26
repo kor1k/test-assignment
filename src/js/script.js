@@ -7,6 +7,12 @@
 // showFirstChooseVariants();
 
 $(document).ready(function () {
+    $('#start').click(function () {
+        $('.footer').css('width', '59.5%')
+    })
+})
+
+$(document).ready(function () {
     $("#start").click(function () {
         $('#reg-form-section').hide();
         $("div").show();

@@ -119,6 +119,9 @@ html {
 
 /*__________________main-pink-section  end_________________________*/
 
+
+/*__________________option-orange-section start_________________________*/
+
 .content-side-options {
     box-shadow: -99px 0px 250px -14px rgba(252, 137, 80, 1);
     display: flex;
@@ -197,3 +200,5 @@ html {
     font-size: 2rem;
     color: white;
 }
+
+/*__________________option-orange-section end_________________________*/

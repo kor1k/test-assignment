@@ -120,7 +120,7 @@ html {
 /*__________________main-pink-section  end_________________________*/
 
 .content-side-options {
-    box-shadow: -99px 0px 250px -14px rgba(252,137,80,1);
+    box-shadow: -99px 0px 250px -14px rgba(252, 137, 80, 1);
     display: flex;
     /*justify-content: center;*/
     flex-direction: column;
@@ -184,8 +184,8 @@ html {
 
 .content-side-options__button-next-content-side {
     margin: 2rem 0.5rem 0 0.5rem;
-    /*display: flex;*/
-    display: none;
+    display: flex;
+    /*display: none;*/
     justify-content: center;
     align-items: center;
     /*margin: 0.5rem;*/
@@ -197,5 +197,3 @@ html {
     font-size: 2rem;
     color: white;
 }
-
-

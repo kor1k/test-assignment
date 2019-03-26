@@ -6,13 +6,9 @@
 // }
 // showFirstChooseVariants();
 
-$(document).ready(function(){
-    // $("#hide").click(function(){
-    //     $("p").hide();
-    // });
-    $("#start").click(function(){
+$(document).ready(function () {
+    $("#start").click(function () {
         $("div").show();
         $('#hide').hide();
     });
-
 });

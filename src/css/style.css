@@ -44,14 +44,14 @@ html {
 }
 
 .content-side {
-    background-color: rgb(252, 80, 149);
-    border-left: 14px solid rgb(252, 80, 149);
+    background-color: #fc5095;
+    border-left: 14px solid #fc5095;
     /*right: 0;*/
 }
 
 .content-side::before {
     display: block;
-    background-color: rgb(252, 80, 149);
+    background-color: #fc5095;
     content: '';
     height: 15%;
     width: 100%;
@@ -67,7 +67,7 @@ html {
 
 .content-side__information-title {
     font-size: 3.5rem;
-    color: rgb(252, 80, 149);
+    color: #fc5095;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -89,7 +89,7 @@ html {
 .content-side__information::before {
     font-family: "Font Awesome 5 Free", serif;
     content: "\f004";
-    color: rgb(252, 80, 149);
+    color: #fc5095;
     background-color: #fff;
     font-size: 3.5rem;
     font-weight: 900;
@@ -98,7 +98,7 @@ html {
     text-align: center;
     line-height: 6.5rem;
     box-sizing: border-box;
-    border: 0.8rem solid rgb(252, 80, 149);
+    border: 0.8rem solid #fc5095;
     border-radius: 50%;
     position: absolute;
     left: -5rem;
@@ -109,7 +109,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(252, 80, 149);
+    background-color: #fc5095;
     box-sizing: border-box;
     border-radius: 2.5rem;
     width: 18rem;
@@ -124,19 +124,40 @@ html {
     text-transform: uppercase;
 }
 
+/*.first__choose-variants {*/
+/*border-left: 15px solid #fc8950;*/
+/*}*/
+
 .first__choose-variants::before {
     display: none;
 }
 
 .first__choose-variants-information {
     display: none;
-    background-color: orange; !important;
-    padding: 9rem 5rem 2rem 6rem;
+    background-color: #fc8950;
+!important;
+    padding: 8rem 0 0 4rem;
+}
+
+.first__choose-variants-information::before {
+    color: #fc8950;
+}
+
+.first__choose-variants-information {
+
+}
+
+.first__choose-variants-information-text {
+    background-color: #f6f5f5;
+    font-size: 2rem;
+    color: #fc8950;
+    font-weight: 500;
 }
 
 .first__choose-variants-information-text::before {
     display: none;
 }
+
 .first__choose-variants__check-answer {
     position: relative;
     display: flex;
@@ -144,18 +165,37 @@ html {
     flex-direction: row;
 }
 
+.choose__variant:active {
+    background-color: #fc8950;
+    color: white;
+    font-size: 2rem;
+}
+
 .choose__variant {
-    /*position: absolute;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin: 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     color: black;
     box-sizing: border-box;
-    border: 2px solid orange;
-    width: 10rem;
-    height: 5rem;
-    border-radius: 3rem;
+    background-color: white;
+    border: 1px solid white;
+    width: 17rem;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+.choose__variant__next-section {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    background-color: #fc8950;
+    color: white;
+    border: 1px solid white;
+    width: 17rem;
+    height: 6rem;
+    border-radius: 1rem;
 }

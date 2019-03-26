@@ -9,6 +9,6 @@
 $(document).ready(function () {
     $("#start").click(function () {
         $("div").show();
-        $('#hide').hide();
+        $('#hide').hide()
     });
 });

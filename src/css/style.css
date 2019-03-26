@@ -11,6 +11,12 @@ html {
     width: 100vw;
 }
 
+.test-color {
+    opacity: 0.3;
+    /*z-index: 100;*/
+    background-color: #fc8950;
+}
+
 .background__section {
     width: 75%;
     background-image: url("../images/bg-image.png");

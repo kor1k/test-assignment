@@ -44,14 +44,14 @@ html {
 }
 
 .content-side {
-    background-color: #fc5095;
-    border-left: 14px solid #fc5095;
+    background-color: rgb(252, 80, 149);
+    border-left: 14px solid rgb(252, 80, 149);
     /*right: 0;*/
 }
 
 .content-side::before {
     display: block;
-    background-color: #fc5095;
+    background-color: rgb(252, 80, 149);
     content: '';
     height: 15%;
     width: 100%;
@@ -67,7 +67,7 @@ html {
 
 .content-side__information-title {
     font-size: 3.5rem;
-    color: #fc5095;
+    color: rgb(252, 80, 149);
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -89,7 +89,7 @@ html {
 .content-side__information::before {
     font-family: "Font Awesome 5 Free", serif;
     content: "\f004";
-    color: #fc5095;
+    color: rgb(252, 80, 149);
     background-color: #fff;
     font-size: 3.5rem;
     font-weight: 900;
@@ -98,7 +98,7 @@ html {
     text-align: center;
     line-height: 6.5rem;
     box-sizing: border-box;
-    border: 0.8rem solid #fc5095;
+    border: 0.8rem solid rgb(252, 80, 149);
     border-radius: 50%;
     position: absolute;
     left: -5rem;
@@ -108,14 +108,54 @@ html {
 .content-side__information-start-ready {
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
     align-items: center;
-    background-color: #fc5095;
-    color: white;
-    font-weight: 700;
+    background-color: rgb(252, 80, 149);
     box-sizing: border-box;
     border-radius: 2.5rem;
-    font-size: 3rem;
     width: 18rem;
     height: 7rem;
+    cursor: pointer;
+}
+
+.content-side__information-start-ready > a {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.first__choose-variants::before {
+    display: none;
+}
+
+.first__choose-variants-information {
+    display: none;
+    background-color: orange; !important;
+    padding: 9rem 5rem 2rem 6rem;
+}
+
+.first__choose-variants-information-text::before {
+    display: none;
+}
+.first__choose-variants__check-answer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.choose__variant {
+    /*position: absolute;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem;
+    font-size: 1rem;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid orange;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 3rem;
 }

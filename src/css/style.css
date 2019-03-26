@@ -128,7 +128,7 @@ html {
     /*justify-content: center;*/
     flex-direction: column;
     /*text-align: right;*/
-    width: 35%;
+    width: 45%;
     border-left: 1.2rem solid #fc8950;
     padding: 10rem 0 0 3rem;
     background-color: #f6f5f5;
@@ -202,3 +202,95 @@ html {
 }
 
 /*__________________option-orange-section end_________________________*/
+
+.content-side-form {
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    /*text-align: right;*/
+    width: 45%;
+    background: #f6f5f5;
+    border-left: 1.2rem solid #1da7c0;
+    padding: 10rem 0 0 3rem;
+}
+
+.content-side-form__title {
+    margin-top: 4rem;
+    font-weight: 700;
+    color: #1da7c0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.content-side-form__title::before {
+    font-family: "Font Awesome 5 Free", serif;
+    content: "\f004";
+    color: #1da7c0;
+    background-color: #fff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    line-height: 6rem;
+    box-sizing: border-box;
+    border: 0.8rem solid #1da7c0;
+    border-radius: 50%;
+    position: absolute;
+    left: -7.5rem;
+    top: -2rem;
+}
+
+.content-side-form__title-before-action-fields {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.content-side-form__choose-sex {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+}
+
+.content-side-form__choose-sex__male {
+    margin-right: 2rem;
+}
+
+.content-side-form__choose-sex__male, .content-side-form__choose-sex__female {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 2rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 4rem;
+}
+
+.content-side-form__choose-sex__male > i, .content-side-form__choose-sex__female > i {
+    margin-right: 1.5rem;
+}
+
+.terms {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.content-side-form__button-next-content-side {
+    margin: 2rem 0.5rem 0 0.5rem;
+    display: flex;
+    /*display: none;*/
+    justify-content: center;
+    align-items: center;
+    /*margin: 0.5rem;*/
+    width: 20rem;
+    height: 5rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: #1da7c0;
+    font-size: 2rem;
+    color: white;
+}

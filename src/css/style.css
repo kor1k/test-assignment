@@ -11,22 +11,22 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: url(../images/bg-image.png) left no-repeat;
-    background-position-x: -10%;
-    background-size: contain;
+    /*background: url(../images/bg-image.png) left no-repeat;*/
+    /*background-position-x: -10%;*/
+    /*background-size: contain;*/
 }
 
-/*.background-wrapper {*/
-    /* display: flex; */
-    /* justify-content: center; */
-    /* background-image: url(../images/bg-image.png); */
-    /* width: 75%; */
-    /* height: 100vh; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-position: right 35% bottom 45%; */
-/*}*/
+.background-wrapper {
+     display: flex;
+     justify-content: center;
+     background-image: url(../images/bg-image.png);
+     width: 75%;
+     height: 100vh;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-position: right 35% bottom 45%;
+}
 
 .footer {
     position: absolute;

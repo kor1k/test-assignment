@@ -23,7 +23,7 @@ html {
 .footer {
     position: absolute;
     bottom: 0;
-    width: 72%; /*72% for pink side!!! for other it will be 66.2%*/
+    width: 72.8%; /*72.8% for pink side!!! for other it will be 60.7%*/
     background: rgba(255, 255, 255, 0.75);
 }
 
@@ -48,6 +48,7 @@ html {
 /*__________________main-pink-section  start_________________________*/
 
 .content-side-main {
+    /*display: none;*/
     display: flex;
     /*justify-content: center;*/
     flex-direction: column;
@@ -125,7 +126,8 @@ html {
 
 .content-side-options {
     box-shadow: -99px 0 250px -14px rgba(252, 137, 80, 1);
-    display: flex;
+    display: none;
+    /*display: flex;*/
     /*justify-content: center;*/
     flex-direction: column;
     /*text-align: right;*/
@@ -186,6 +188,20 @@ html {
     color: black;
 }
 
+.content-side-options__option__clicked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    width: 17rem;
+    height: 5rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: #fc8950;
+    font-size: 2rem;
+    color: white;
+}
+
 .content-side-options__button-next-content-side {
     margin: 2rem 0.5rem 0 0.5rem;
     display: flex;
@@ -207,8 +223,8 @@ html {
 
 /*__________________form-blue-section start_________________________*/
 .content-side-form {
-
-    display: flex;
+    display: none;
+    /*display: flex;*/
     /*justify-content: center;*/
     flex-direction: column;
     /*text-align: right;*/

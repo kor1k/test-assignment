@@ -17,15 +17,30 @@ html {
 }
 
 .background-wrapper {
-     display: flex;
-     justify-content: center;
-     background-image: url(../images/bg-image.png);
-     width: 75%;
-     height: 100vh;
-     background-size: cover;
-     background-repeat: no-repeat;
-     /*background-position: center;*/
-     /*background-position: right 35% bottom 45%;*/
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/bg-image.png);
+    width: 75%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    /*filter: blur(8px);*/
+    /*background-position: center;*/
+    /*background-position: right 35% bottom 45%;*/
+}
+
+.background-wrapper-blur {
+    z-index: 1;
+    background-color: rgba(252, 137, 80, 0.4);
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/bg-image.png);
+    width: 75%;
+    /*filter: blur(8px);*/
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer {
@@ -61,6 +76,7 @@ html {
 /*__________________main-pink-section  start_________________________*/
 
 .content-side-main {
+    z-index: 3;
     /*display: none;*/
     display: -webkit-box;
     display: -ms-flexbox;
@@ -154,6 +170,7 @@ html {
 /*__________________option-orange-section start_________________________*/
 
 .content-side-options {
+    z-index: 3;
     -webkit-box-shadow: -99px 0 250px -14px rgba(252, 137, 80, 1);
     box-shadow: -99px 0 250px -14px rgba(252, 137, 80, 1);
     display: none;
@@ -277,6 +294,7 @@ html {
 
 /*__________________form-blue-section start_________________________*/
 .content-side-form {
+    z-index: 3;
     display: none;
     /*display: flex;*/
     /*justify-content: center;*/
@@ -357,6 +375,7 @@ html {
     border-radius: 1rem;
     width: 15rem;
     height: 4rem;
+    cursor: pointer;
 }
 
 .content-side-form__choose-sex__male > i, .content-side-form__choose-sex__female > i {
@@ -409,3 +428,13 @@ html {
 }
 
 /*__________________form-blue-section end_________________________*/
+
+@media screen and (min-width: 154rem) {
+    * {
+        font-size: 8px;
+    }
+}
+
+.option__1.active {
+
+}

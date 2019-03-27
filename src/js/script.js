@@ -14,24 +14,29 @@ $(document).ready(function () {
     })
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".content-side-options__option").on({
-        click: function(){
+        click: function () {
             $(this).css("background-color", "#fc8950");
             $(this).css("color", "#fff");
         }
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
+    $('.content-side-options__option').toggleClass('toggle');
+})
+
+
+$(document).ready(function () {
     $(".content-side-form__choose-sex__male").on({
-        click: function(){
+        click: function () {
             $(this).css("background-color", "#1da7c0");
             $(this).css("color", "#fff");
         }
     });
     $(".content-side-form__choose-sex__female").on({
-        click: function(){
+        click: function () {
             $(this).css("background-color", "#1da7c0");
             $(this).css("color", "#fff");
         }
@@ -40,14 +45,19 @@ $(document).ready(function(){
 
 $(document).ready(function () {
     $('.content-side-options__option').click(function () {
-        $('.content-side-options__button-next-content-side').css('display','flex');
+        $('.content-side-options__button-next-content-side').css('display', 'flex');
     })
-})
+});
 
 
 // $(document).ready(function () {
-//     $('.option__1').click(function () {
-//         $('.content-side-options__option').toggleClass('.content-side-options__option__clicked')
+//     $('#option-1').click(function () {
+//         $('#option-1').css('background-color:','orange');
+//         $('#option-2').css('background-color:','white');
+//         $('#option-3').css('background-color:','white');
 //     })
-// });
+// })
 
+// $(document).ready(function () {
+//     $("div").removeClass("background-wrapper").addClass("background-wrapper-blur");
+// })

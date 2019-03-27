@@ -254,8 +254,8 @@ html {
     margin: 2rem 0.5rem 0 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    /*display: none;*/
+    /*display: flex;*/
+    display: none;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

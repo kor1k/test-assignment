@@ -38,6 +38,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function () {
+    $('.content-side-options__option').click(function () {
+        $('.content-side-options__button-next-content-side').css('display','flex');
+    })
+})
+
 
 // $(document).ready(function () {
 //     $('.option__1').click(function () {

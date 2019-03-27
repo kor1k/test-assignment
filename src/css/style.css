@@ -247,7 +247,7 @@ html {
     color: black;
 }
 
-.content-side-options__option__clicked {
+.content-side-options__option.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -433,8 +433,4 @@ html {
     * {
         font-size: 8px;
     }
-}
-
-.option__1.active {
-
 }

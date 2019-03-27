@@ -14,18 +14,45 @@ $(document).ready(function () {
     })
 });
 
-$(document).ready(function () {
-    $(".content-side-options__option").on({
-        click: function () {
-            $(this).css("background-color", "#fc8950");
-            $(this).css("color", "#fff");
-        }
-    });
-});
+// $(document).ready(function () {
+//     $(".content-side-options__option").on({
+//         click: function () {
+//             $(this).css("background-color", "#fc8950");
+//             $(this).css("color", "#fff");
+//         }
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('.content-side-options__option').click(function () {
+//         $(this).toggleClass('active')
+//         // console.log(e)
+//     })
+// });
+
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $("p").removeClass("intro");
+//     });
+// });
+
+
+// $(document).ready(function () {
+//     $(".option__1").on({
+//         click: function () {
+//             $(this).css("background-color", "#fc8950");
+//             $(this).css("color", "#fff");
+//         }
+//     });
+// });
 
 $(document).ready(function () {
-    $('.content-side-options__option').toggleClass('toggle');
-})
+    $('.content-side-options__option').click(function (e) {
+        $('.content-side-options__option').removeClass('active');
+        $(this).toggleClass('active');
+        // $(this).toggleClass()
+    })
+});
 
 
 $(document).ready(function () {

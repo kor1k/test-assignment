@@ -31,7 +31,6 @@ html {
 }
 
 .background-wrapper-blur {
-    z-index: 1;
     background-color: rgba(252, 137, 80, 0.4);
     display: flex;
     justify-content: center;
@@ -41,6 +40,7 @@ html {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .footer {
@@ -444,6 +444,14 @@ html {
     padding-left: 1rem;
     border: 1px solid black;
     border-radius: 1rem;
+}
+
+.test-alert {
+    /*display: flex;*/
+    display: none;
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
 }
 
 /*__________________form-blue-section end_________________________*/

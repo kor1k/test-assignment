@@ -14,8 +14,34 @@ $(document).ready(function () {
     })
 });
 
+$(document).ready(function(){
+    $(".content-side-options__option").on({
+        click: function(){
+            $(this).css("background-color", "#fc8950");
+            $(this).css("color", "#fff");
+        }
+    });
+});
+
+$(document).ready(function(){
+    $(".content-side-form__choose-sex__male").on({
+        click: function(){
+            $(this).css("background-color", "#1da7c0");
+            $(this).css("color", "#fff");
+        }
+    });
+    $(".content-side-form__choose-sex__female").on({
+        click: function(){
+            $(this).css("background-color", "#1da7c0");
+            $(this).css("color", "#fff");
+        }
+    });
+});
+
+
 // $(document).ready(function () {
 //     $('.option__1').click(function () {
 //         $('.content-side-options__option').toggleClass('.content-side-options__option__clicked')
 //     })
 // });
+

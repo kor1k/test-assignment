@@ -75,13 +75,13 @@ html {
 
 /*__________________main-pink-section  start_________________________*/
 
-.content-side-main__top-block {
-    display: flex;
-    /*justify-content: ;*/
-    flex-direction: column;
-}
+/*.content-side-main__top-block {*/
+    /*display: flex;*/
+    /*!*justify-content: ;*!*/
+    /*flex-direction: column;*/
+/*}*/
 
-.content-side-main__top-block-colored {
+.content-side-main__top-block-colored-main {
     display: flex;
     background-color: #fc5095;
     height: 20rem;
@@ -207,8 +207,15 @@ html {
     /*text-align: right;*/
     width: 45%;
     border-left: 1.2rem solid #fc8950;
-    padding: 10rem 0 0 3rem;
+    /*padding: 10rem 0 0 3rem;*/
     background-color: #f6f5f5;
+}
+
+.content-side-main__top-block-colored-options {
+    display: flex;
+    background-color: #fc8950;
+    height: 20rem;
+    width: 100%;
 }
 
 .content-side-options__title::before {
@@ -227,7 +234,7 @@ html {
     border: 0.8rem solid #fc8950;
     border-radius: 50%;
     position: absolute;
-    left: -7.5rem;
+    left: -4.5rem;
     top: -2rem;
 }
 
@@ -238,18 +245,22 @@ html {
     font-size: 3rem;
     text-transform: uppercase;
     position: relative;
+    padding-left: 4rem;
+    width: 40rem;
+    margin-bottom: 4rem;
+    /*padding-left: 4rem;*/
 }
 
-.content-side-options__title-secondary {
-    margin: 2rem 0 10rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 24rem;
-    color: #fc8950;
-    text-transform: uppercase;
-    font-size: 2rem;
-}
+/*.content-side-options__title-secondary {*/
+    /*margin: 2rem 0 10rem 4rem;*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*width: 24rem;*/
+    /*color: #fc8950;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 2rem;*/
+/*}*/
 
 .content-side-options__option {
     display: -webkit-box;
@@ -261,14 +272,15 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0.5rem;
-    width: 17rem;
+    margin: 0.5rem 0.5rem 0.5rem 4rem;
+    width: 27rem;
     height: 5rem;
     border: 1px solid gray;
     border-radius: 1rem;
     background: white;
     font-size: 2rem;
     color: black;
+    /*margin-left: 4rem;*/
 }
 
 .content-side-options__option.active {
@@ -281,8 +293,8 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0.5rem;
-    width: 17rem;
+    margin: 0.5rem 0.5rem 0.5rem 4rem;
+    width: 27rem;
     height: 5rem;
     border: 1px solid gray;
     border-radius: 1rem;
@@ -292,7 +304,7 @@ html {
 }
 
 .content-side-options__button-next-content-side {
-    margin: 2rem 0.5rem 0 0.5rem;
+    margin: 2rem 0.5rem 0 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     /*display: flex;*/
@@ -304,6 +316,7 @@ html {
     -ms-flex-align: center;
     align-items: center;
     /*margin: 0.5rem;*/
+    /*margin: 0.5rem 0.5rem 0.5rem 4rem;*/
     width: 20rem;
     height: 5rem;
     border: 1px solid gray;
@@ -317,6 +330,13 @@ html {
 
 
 /*__________________form-blue-section start_________________________*/
+.content-side-main__top-block-colored-form {
+    display: flex;
+    background-color: #1da7c0;
+    height: 20rem;
+    width: 100%;
+}
+
 .content-side-form {
     z-index: 3;
     display: none;
@@ -332,7 +352,7 @@ html {
     border-left: 1.2rem solid #1da7c0;
     -webkit-box-shadow: -99px 0 250px -14px rgba(29, 167, 192, 1);
     box-shadow: -99px 0 250px -14px rgba(29, 167, 192, 1);
-    padding: 10rem 0 0 3rem;
+    /*padding: 10rem 0 0 3rem;*/
 }
 
 .content-side-form__title {
@@ -342,6 +362,7 @@ html {
     font-size: 3rem;
     text-transform: uppercase;
     position: relative;
+    padding-left: 4rem;
 }
 
 .content-side-form__title::before {
@@ -360,13 +381,13 @@ html {
     border: 0.8rem solid #1da7c0;
     border-radius: 50%;
     position: absolute;
-    left: -7.5rem;
+    left: -4.5rem;
     top: -2rem;
 }
 
 .content-side-form__title-before-action-fields {
     font-size: 1.5rem;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 2rem 4rem;
 }
 
 .content-side-form__choose-sex {
@@ -377,6 +398,7 @@ html {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 30rem;
+    margin-left: 4rem;
 }
 
 .content-side-form__choose-sex__male {
@@ -414,6 +436,7 @@ html {
     align-items: center;
     background-color: #1da7c0;
     font-size: 2rem;
+    color: #ffffff;
     border: 1px solid gray;
     border-radius: 1rem;
     width: 15rem;
@@ -436,11 +459,11 @@ html {
     -ms-flex-align: center;
     align-items: center;
     width: 31rem;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 2rem 4rem;
 }
 
 .content-side-form__button-next-content-side {
-    margin: 2rem 0.5rem 0 0.5rem;
+    margin: 0 0.5rem 0 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -468,6 +491,7 @@ html {
     padding-left: 1rem;
     border: 1px solid black;
     border-radius: 1rem;
+    margin-left: 4rem;
 }
 
 /*.test-alert_1, .test-alert_2, .test-alert_3 {*/

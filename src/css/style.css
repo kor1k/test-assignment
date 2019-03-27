@@ -24,8 +24,8 @@ html {
      height: 100vh;
      background-size: cover;
      background-repeat: no-repeat;
-     background-position: center;
-     background-position: right 35% bottom 45%;
+     /*background-position: center;*/
+     /*background-position: right 35% bottom 45%;*/
 }
 
 .footer {

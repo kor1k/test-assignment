@@ -378,6 +378,25 @@ html {
     cursor: pointer;
 }
 
+.content-side-form__choose-sex__male.active, .content-side-form__choose-sex__female.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #1da7c0;
+    font-size: 2rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
 .content-side-form__choose-sex__male > i, .content-side-form__choose-sex__female > i {
     margin-right: 1.5rem;
 }

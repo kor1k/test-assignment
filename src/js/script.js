@@ -54,7 +54,14 @@ $(document).ready(function () {
     })
 });
 
+$(document).ready(function () {
+    $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').click(function (e) {
+        $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').removeClass('active');
+        $(this).toggleClass('active');
+    })
+});
 
+/*
 $(document).ready(function () {
     $(".content-side-form__choose-sex__male").on({
         click: function () {
@@ -69,6 +76,7 @@ $(document).ready(function () {
         }
     });
 });
+*/
 
 $(document).ready(function () {
     $('.content-side-options__option').click(function () {

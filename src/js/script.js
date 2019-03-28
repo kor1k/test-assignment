@@ -48,3 +48,33 @@ $(document).ready(function () {
         $('.content-side-options__button-next-content-side').css('display', 'flex');
     })
 });
+
+
+// $(document).ready(function () {
+//
+//     $('#first_form').submit(function (e) {
+//         e.preventDefault();
+//         let form_name = $('#form_name').val();
+//         let email = $('#email').val();
+//         let password = $('#password').val();
+//
+//         $(".error").remove();
+//
+//         if (form_name.length < 1) {
+//             $('#first_name').after('<span class="error">This field is required</span>');
+//         }
+//         if (email.length < 1) {
+//             $('#email').after('<span class="error">This field is required</span>');
+//         } else {
+//             let regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+//             let validEmail = regEx.test(email);
+//             if (!validEmail) {
+//                 $('#email').after('<span class="error">Enter a valid email</span>');
+//             }
+//         }
+//         if (password.length < 8) {
+//             $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+//         }
+//     });
+//
+// });

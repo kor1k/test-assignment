@@ -78,28 +78,51 @@
             <div class="content-side-form__choose-sex__male"><i class="fas fa-male"></i> Вариант 1</div>
             <div class="content-side-form__choose-sex__female"><i class="fas fa-female"></i> Вариант 2</div>
         </div>
-        <p class="content-side-form__title-before-action-fields">Ваше имя:</p>
-        <form id="form-field__name" class="content-side-form__form">
-            <input required class="content-side-form__form-name form" name="form_name" id="form_name" type="text"
-                   placeholder="Имя">
-        </form>
-        <p class="content-side-form__title-before-action-fields">Email:</p>
-        <form id="form-field__email" class="content-side-form__form">
-            <input required class="content-side-form__form-email form" name="form_email" id="form_email" type="text"
-                   placeholder="Email">
-        </form>
-        <p class="content-side-form__title-before-action-fields">Придумайте пароль:</p>
-        <form id="#form-field__password" class="content-side-form__form">
-            <input required class="content-side-form__form-pass form" name="form_pass" id="form_pass" type="text"
-                   placeholder="Пароль">
-        </form>
-        <div class="terms">
-            <input class="content-side-form__confirm-terms-checkbox" type="checkbox"/>
-            <div class="content-side-form__confirm-and-agree-terms-text">Регистрируясь, вы подтверждаете, что вам уже
-                исполнилось 18 лет и вы ознакомились с условиями пользования сайтом.
-            </div>
+        <!--<div class="form-wrapper">-->
+        <!--asdjavshdkbjlanksdaskhd-->
+        <!--<form id="submit" class="content-side-form third-section-forms">-->
+        <!--&lt;!&ndash;<lable>Lorem ipsum.</lable>&ndash;&gt;-->
+        <!--<input type="text" class="input-name-form" id="form_name"-->
+        <!--placeholder="name"-->
+        <!--minlength="2"-->
+        <!--&gt;-->
+        <!--<input required class="input-phone-form" name="form_phone" id="form_phone" type="tel"-->
+        <!--pattern="^[0-9]*$"-->
+        <!--minlength="10"-->
+        <!--maxlength="10"-->
+        <!--placeholder="phone">-->
+        <!--<input required class="input-email-form" name="form_email" id="form_email" type="email"-->
+        <!--placeholder="e-mail">-->
+        <!--<input class="input-send-button" name="submit" type="submit" value="Send"/>-->
+        <!--</form>-->
+        <!--</div>-->
+        <div class="wrapper-form-fields">
+            <form id="form-fields__inputs" class="content-side-form__form">
+                <p>Ваше имя:</p>
+                <input required class="content-side-form__form-name form" name="input_name" id="form_name" type="text"
+                       minlength="2"
+                       placeholder="Имя">
+                <p>Email:</p>
+                <input required class="content-side-form__form-email form" name="input_email" id="form_email"
+                       type="email"
+                       placeholder="Email">
+                <p>Придумайте пароль</p>
+                <input required class="content-side-form__form-pass form" name="input_pass" id="form_pass" type="text"
+                       minlength="6"
+                       placeholder="Пароль">
+                <input class="content-side-form__form-submit-btn" name="submit" type="submit" value="Продолжить"/>
+            </form>
         </div>
-        <a class="content-side-form__button-next-content-side" id="btn-blue" href="#">Продолжить</a>
+        <!--<div class="terms">-->
+        <!--<form action="">-->
+        <!--<div class="content-side-form__confirm-and-agree-terms-text">Регистрируясь, вы подтверждаете, что вам-->
+        <!--уже-->
+        <!--исполнилось 18 лет и вы ознакомились с условиями пользования сайтом.-->
+        <!--</div>-->
+        <!--<input required class="content-side-form__confirm-terms-checkbox" type="checkbox"/>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--<a class="content-side-form__button-next-content-side" id="btn-blue" href="#">Продолжить</a>-->
     </div>
     <!--Form blue section (third) end-->
 </div>

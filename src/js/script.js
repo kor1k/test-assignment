@@ -37,7 +37,7 @@ $('.content-side-options__button-next-content-side').click(function () {
 
 
 $(document).ready(function () {
-    $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').click(function (e) {
+    $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').click(function () {
         $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').removeClass('active');
         $(this).toggleClass('active');
     })

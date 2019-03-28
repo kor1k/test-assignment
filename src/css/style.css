@@ -228,7 +228,12 @@ html {
     border-left: 1.2rem solid #fc8950;
     /*padding: 10rem 0 0 3rem;*/
     background-color: #f6f5f5;
+    transform: translateX(0px);
+    /*background-color: red;*/
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
+
 
 .content-side-options.active {
     z-index: 3;
@@ -246,6 +251,8 @@ html {
     border-left: 1.2rem solid #fc8950;
     /*padding: 10rem 0 0 3rem;*/
     background-color: #f6f5f5;
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
 }
 
 .content-side-options.not-active {
@@ -369,6 +376,8 @@ html {
 
 .content-side-options__btn-to-forms.active {
     display: flex;
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
 }
 
 .content-side-main-result {
@@ -382,7 +391,17 @@ html {
     background-color: rgba(252, 137, 80, 0.7);
     flex-direction: column;
     font-weight: 700;
+
 }
+
+.content-side-main-result.active {
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
+}
+
+
+
+
 
 .content-side-main-result.not-active {
     display: none;
@@ -433,6 +452,8 @@ html {
 
 .content-side-form.active {
     display: flex;
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
 }
 
 .content-side-form__title {
@@ -522,6 +543,8 @@ html {
     width: 15rem;
     height: 4rem;
     cursor: pointer;
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
 }
 
 .content-side-form__choose-sex__male > i, .content-side-form__choose-sex__female > i {
@@ -623,6 +646,25 @@ html {
     border-radius: 1rem;
     border: 1px solid #1da7c0;
 }
+/*____*/
+
+
+
+.animationClassYouAreAdding  {
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
+}
+@keyframes yourCustomAnimation {
+    from {
+        transform:scale(0.7);
+        opacity:0
+    }
+    to {
+        transform: scale(1);
+        opacity:1
+    }
+}
+/*_____*/
 
 /*__________________form-blue-section end_________________________*/
 

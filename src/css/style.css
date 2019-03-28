@@ -603,6 +603,7 @@ html {
 
 .content-side-form__form-submit-btn {
     display: flex;
+    justify-content: center;
     /*display: none;*/
     width: 18rem;
     height: 5rem;

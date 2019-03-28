@@ -48,13 +48,9 @@ $(document).ready(function () {
     });
 });
 
-
-// let form_name = $('#form_name');
-// let form_email = $('#form_email');
-// let form_pass = $('#form_pass');
-// let submit = $('#reg-form-submit');
-//
-// console.log(form_name)
-// console.log(form_email)
-// console.log(form_pass)
-// console.log(submit)
+// function validationPatterns() {
+//     let nameFlag = /^([a-zA-Z]{3,16})$/;
+//     let emailFlag = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+//     let passwordFlag = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+//     // let passwordFlag =
+// }

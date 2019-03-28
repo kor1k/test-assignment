@@ -39,3 +39,13 @@ $(document).ready(function () {
         $('.content-side-main-result__view-text').text('Людей обращает внимание на ' + $(event.target).attr('data-letter'));
     });
 });
+
+let form_name = $('#form_name');
+let form_email = $('#form_email');
+let form_pass = $('#form_pass');
+let submit = $('#reg-form-submit');
+
+console.log(form_name)
+console.log(form_email)
+console.log(form_pass)
+// console.log(submit)

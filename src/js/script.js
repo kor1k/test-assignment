@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
 
     $('.content-side-options__option').click(function () {
-        $('.content-side-options__option').removeClass('active');
+        $('.content-side-options__option').removeClass('active').show(1000);
         $(this).toggleClass('active');
     });
 
@@ -32,8 +32,8 @@ $(document).ready(function () {
     $('.content-side-options__option').click(function (e) {
         e.preventDefault();
         $('.content-side-options__option').removeClass('active');
-        $(event.target).addClass('active');
-        $('.content-side-options__btn-to-forms').addClass('active').show(500);
+        $(event.target).addClass('active').show(1111);
+        $('.content-side-options__btn-to-forms').addClass('active');
         $('.content-side-main--result').addClass('active');
         $('.content-side-main-result__view-percent').text($(event.target).attr('data-perc'));
         $('.content-side-main-result__view-text').text('Людей обращает внимание на ' + $(event.target).attr('data-letter'));

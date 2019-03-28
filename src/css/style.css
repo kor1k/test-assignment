@@ -50,6 +50,14 @@ html {
     background: rgba(255, 255, 255, 0.75);
 }
 
+.footer.active {
+    position: absolute;
+    bottom: 0;
+    width: 62%; /*72.8% for pink side!!! for other it will be 60.7%*/
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
 .footer__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -113,6 +121,10 @@ html {
     -webkit-box-shadow: -99px 0 250px -14px rgba(252, 80, 149, 1);
     box-shadow: -99px 0 250px -14px rgba(252, 80, 149, 1);
     background-color: white;
+}
+
+.content-side-main.not-active {
+    display: none;
 }
 
 .content-side-main__title {
@@ -211,6 +223,28 @@ html {
     background-color: #f6f5f5;
 }
 
+.content-side-options.active {
+    z-index: 3;
+    -webkit-box-shadow: -99px 0 250px -14px rgba(252, 137, 80, 1);
+    box-shadow: -99px 0 250px -14px rgba(252, 137, 80, 1);
+    /*display: none;*/
+    display: flex;
+    /*justify-content: center;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /*text-align: right;*/
+    width: 45%;
+    border-left: 1.2rem solid #fc8950;
+    /*padding: 10rem 0 0 3rem;*/
+    background-color: #f6f5f5;
+}
+
+.content-side-options.not-active {
+    display: none;
+}
+
 .content-side-main__top-block-colored-options {
     display: flex;
     background-color: #fc8950;
@@ -303,7 +337,7 @@ html {
     color: white;
 }
 
-.content-side-options__button-next-content-side {
+.content-side-options__btn-to-forms {
     margin: 2rem 0.5rem 0 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,6 +360,10 @@ html {
     color: white;
 }
 
+.content-side-options__btn-to-forms.active {
+    display: flex;
+}
+
 .content-side-main-result {
     /*width: 40%;*/
     display: flex;
@@ -337,6 +375,10 @@ html {
     background-color: rgba(252, 137, 80, 0.7);
     flex-direction: column;
     font-weight: 700;
+}
+
+.content-side-main-result.not-active {
+    display: none;
 }
 
 .content-side-main-result__view-percent {
@@ -380,6 +422,10 @@ html {
     -webkit-box-shadow: -99px 0 250px -14px rgba(29, 167, 192, 1);
     box-shadow: -99px 0 250px -14px rgba(29, 167, 192, 1);
     /*padding: 10rem 0 0 3rem;*/
+}
+
+.content-side-form.active {
+    display: flex;
 }
 
 .content-side-form__title {

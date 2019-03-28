@@ -494,22 +494,6 @@ html {
     margin-left: 4rem;
 }
 
-.first-check-result {
-    display: none;
-    background-color: rgba(252, 137, 80, 0.7);
-    width: 55%;
-    /*position: relative;*/
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 123;
-}
-
-.first-check-result.active {
-    display: flex;
-}
-
 .test-alert_1, .test-alert_2, .test-alert_3 {
     display: none;
 }
@@ -523,13 +507,29 @@ html {
 }
 
 .content-side-main-result {
+    /*width: 40%;*/
     display: flex;
-    font-size: 7rem;
+    font-size: 6rem;
     color: white;
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: rgba(252, 137, 80, 0.7);
     flex-direction: column;
+    font-weight: 700;
+}
+
+.content-side-main-result__view-percent {
+    /*display: flex;*/
+    /*margin-left: 5rem;*/
+    justify-content: start;
+    font-size: 25rem;
+    font-weight: 700;
+}
+
+.content-side-main-result__view-text {
+    justify-content: start;
+    font-size: 7rem;
     font-weight: 700;
 }
 
@@ -549,6 +549,7 @@ html {
 /*font-size: 15rem;*/
 /*}*/
 /*__________________form-blue-section end_________________________*/
+
 
 @media screen and (min-width: 154rem) {
     * {

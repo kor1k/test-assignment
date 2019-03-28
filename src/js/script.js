@@ -25,7 +25,7 @@ $('.content-side-options__option').click(function (e) {
     e.preventDefault();
     $('.content-side-options__option').removeClass('active');
     $(event.target).addClass('active');
-    $('.content-side-options__button-next-content-side').addClass('active');
+    $('.content-side-options__button-next-content-side').addClass('active').show(500);
     $('.content-side-main--result').addClass('active');
     $('.content-side-main-result__view-percent').text($(event.target).attr('data-perc'));
     $('.content-side-main-result__view-text').text('Людей обращает внимание на ' + $(event.target).attr('data-letter'));
@@ -57,7 +57,7 @@ $('.content-side-options__option').click(function (e) {
 
 $('.content-side-options__button-next-content-side').click(function () {
     $('.content-side-main-result').css('display', 'none')
-})
+});
 
 
 $(document).ready(function () {

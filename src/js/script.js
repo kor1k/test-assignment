@@ -2,13 +2,13 @@ $(document).ready(function () {
     $('#start').click(function () {
         $('.content-side-main').toggleClass('not-active');
         $('.content-side-options').toggleClass('active');
-        $('.footer').toggleClass('active')
+        $('.footer').toggleClass('active_options')
     });
 
     $('#btn-orange').click(function () {
         $('.content-side-options').toggleClass('not-active');
         $('.content-side-form').toggleClass('active');
-        $('.footer').toggleClass('active')
+        $('.footer').toggleClass('active_forms')
     });
 
     $('.content-side-options__option').click(function () {

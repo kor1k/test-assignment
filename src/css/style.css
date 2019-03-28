@@ -50,7 +50,14 @@ html {
     background: rgba(255, 255, 255, 0.75);
 }
 
-.footer.active {
+.footer.active_options {
+    position: absolute;
+    bottom: 0;
+    width: 62%; /*72.8% for pink side!!! for other it will be 60.7%*/
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.footer.active_forms {
     position: absolute;
     bottom: 0;
     width: 62%; /*72.8% for pink side!!! for other it will be 60.7%*/

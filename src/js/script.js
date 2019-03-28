@@ -1,20 +1,14 @@
 $(document).ready(function () {
     $('#start').click(function () {
-        // $('.content-side-options .active').animate({right: '300px'});
-        $('.footer').animate({
-            width: '62%',
-        }, 500)
-        $('.footer__menu').animate({
-            width: '80%',
-        }, 500)
-    });
-
-
-    $('#start').click(function () {
         $('.content-side-main').toggleClass('not-active');
         $('.content-side-options').toggleClass('active');
         $('.elementToAddAnimationTo').addClass('animationClassYouAreAdding');
-        // $('.footer').toggleClass('active_options');
+        $('.footer').animate({
+            width: '62%',
+        }, 500);
+        $('.footer__menu').animate({
+            width: '80%',
+        }, 500)
     });
 
     $('#btn-orange').click(function () {
@@ -23,7 +17,6 @@ $(document).ready(function () {
         $('.footer').toggleClass('active_forms');
         $('.elementToAddAnimationTo').addClass('animationClassYouAreAdding');
     });
-
 
     $('.content-side-options__option').click(function () {
         $('.content-side-main-result').show(1000);
@@ -53,9 +46,6 @@ $(document).ready(function () {
         $('.content-side-main-result__view-percent').text($(event.target).attr('data-perc'));
         $('.content-side-main-result__view-text').text('Людей обращает внимание на ' + $(event.target).attr('data-letter'));
     });
-
-
-    // $('.content-side-options__btn-to-forms.active').show(1000)
 });
 
 

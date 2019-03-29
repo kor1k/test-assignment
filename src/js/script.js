@@ -85,11 +85,12 @@ $('#reg-form-submit').click(function () {
 // });
 
 $('#form-fields__inputs > input').on('keyup', function () {
-    if ($('#form_name').val() !== "" && $('#form_email').val() !== "" && $('#form_pass').val().length >= 6 && $('#form_checkbox').is(':checked')) {
-        $('.content-side-form__form-submit-btn').addClass('active');
-    } else {
-        $('.content-side-form__form-submit-btn').removeClass('active');
+        if ($('#form_name').val() !== "" && $('#form_email').val() !== "" && $('#form_pass').val().length >= 6) {
+            $('.content-side-form__form-submit-btn').addClass('active');
+        } else {
+            $('.content-side-form__form-submit-btn').removeClass('active');
+        }
     }
-});
+);
 
 console.log($('#form-fields__inputs > input'));

@@ -79,17 +79,18 @@
             <form id="form-fields__inputs" class="content-side-form__form">
                 <!--<p class="req-checker">Заполните все поля</p>-->
                 <p>Ваше имя:</p>
-                <input required class="content-side-form__form-name form" name="input_name" id="form_name" type="text"
+                <input required class="content-side-form__form-name" name="input_name" id="form_name" type="text"
                        minlength="3"
                        placeholder="Имя">
                 <p>Email:</p>
                 <!--pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"-->
-                <input class="content-side-form__form-email form" name="input_email" id="form_email"
+                <input class="content-side-form__form-email" name="input_email" id="form_email"
+                       pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
                        required
                        type="email"
                        placeholder="Email">
                 <p>Придумайте пароль:</p>
-                <input required class="content-side-form__form-pass form" name="input_pass" id="form_pass"
+                <input required class="content-side-form__form-pass" name="input_pass" id="form_pass"
                        type="password"
                        minlength="6"
                        placeholder="Пароль">
@@ -105,16 +106,6 @@
             </form>
         </div>
     </div>
-    <!--Modal window start-->
-    <!--<div class="overlay"></div>-->
-    <!--<div id="modal" class="modal-wrapper">-->
-    <!--<span class="close">&#x2715;</span>-->
-    <!--<p class="modal-form-text">-->
-    <!--Your credentials have been successfully sent. We will contact you-->
-    <!--shortly.-->
-    <!--</p>-->
-    <!--</div>-->
-    <!--Modal window end-->
 
     <!--Form blue section (third) end-->
 </div>

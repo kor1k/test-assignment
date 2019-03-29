@@ -37,14 +37,14 @@ html {
 .footer.active_options {
     position: absolute;
     bottom: 0;
-    width: 62%;
+    width: 62.5%;
     background: rgba(255, 255, 255, 0.75);
 }
 
 .footer.active_forms {
     position: absolute;
     bottom: 0;
-    width: 62%;
+    width: 62.2%;
     background: rgba(255, 255, 255, 0.75);
 }
 

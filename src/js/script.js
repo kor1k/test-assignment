@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('#start').click(function () {
         $('.content-side-main').toggleClass('not-active');
         $('.content-side-options').toggleClass('active');
-        $('.elementToAddAnimationTo').addClass('animationClassYouAreAdding');
+        $('.elementToAddAnimationTo').addClass('animation');
         $('.footer').animate({
             width: '62%',
         }, 500);
@@ -15,7 +15,7 @@ $(document).ready(function () {
         $('.content-side-options').toggleClass('not-active');
         $('.content-side-form').toggleClass('active');
         $('.footer').toggleClass('active_forms');
-        $('.elementToAddAnimationTo').addClass('animationClassYouAreAdding');
+        $('.elementToAddAnimationTo').addClass('animation');
     });
 
     $('.content-side-options__option').click(function () {
@@ -28,8 +28,8 @@ $(document).ready(function () {
         $('.content-side-main-result').toggleClass('not-active');
     });
 
-    $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').click(function () {
-        $('.content-side-form__choose-sex__male, .content-side-form__choose-sex__female').removeClass('active');
+    $('.content-side-form__sex__male, .content-side-form__sex__female').click(function () {
+        $('.content-side-form__sex__male, .content-side-form__sex__female').removeClass('active');
         $(this).toggleClass('active');
     });
 
@@ -48,19 +48,19 @@ $(document).ready(function () {
     });
 });
 
-$('#reg-form-submit').click(function () {
-
-    $('#modal').addClass('open');
-    $('.overlay').addClass('show');
-    // $("#form_phone").val('');
-    // $("#form_email").val('');
-    // $("#form_email").val('');
-
-    $('.close, .overlay').click(function () {
-        $('.overlay').removeClass('show');
-        $('#modal').removeClass('open');
-    });
-})
+// $('#reg-form-submit').click(function () {
+//
+//     $('#modal').addClass('open');
+//     $('.overlay').addClass('show');
+//     // $("#form_phone").val('');
+//     // $("#form_email").val('');
+//     // $("#form_email").val('');
+//
+//     $('.close, .overlay').click(function () {
+//         $('.overlay').removeClass('show');
+//         $('#modal').removeClass('open');
+//     });
+// });
 
 // function validationPatterns() {
 //     let nameFlag = /^([a-zA-Z]{3,16})$/;
@@ -93,4 +93,4 @@ $('#form-fields__inputs > input').on('keyup', function () {
     }
 );
 
-console.log($('#form-fields__inputs > input'));
+// console.log($('#form-fields__inputs > input'));

@@ -84,7 +84,7 @@ $(document).ready(function () {
 //     }
 // });
 
-$('#form-fields__inputs > input').on('click keyup', function () {
+$('#form-fields__inputs input').on('click keyup', function () {
     console.log($('#form_checkbox').is(':checked'));
         if ($('#form_name').val() !== "" && $('#form_email').val() !== "" && $('#form_checkbox').is(':checked') == true && $('#form_pass').val().length >= 6) {
             console.log($('#form_checkbox').is(':checked'));
@@ -94,5 +94,3 @@ $('#form-fields__inputs > input').on('click keyup', function () {
         }
     }
 );
-
-// console.log($('#form-fields__inputs > input'));

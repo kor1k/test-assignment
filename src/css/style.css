@@ -401,9 +401,6 @@ html {
 }
 
 
-
-
-
 .content-side-main-result.not-active {
     display: none;
 }
@@ -489,7 +486,7 @@ html {
 
 .content-side-form__title-before-action-fields {
     font-size: 1.5rem;
-    margin: 1rem 0 2rem 4rem;
+    margin: 3rem 0 1rem 5rem;
 }
 
 .content-side-form__choose-sex {
@@ -499,8 +496,9 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 30rem;
-    margin-left: 4rem;
+    width: 34rem;
+    /*margin-left: 4.5rem;*/
+    margin: 0 0 2rem 4.5rem;
 }
 
 .content-side-form__choose-sex__male {
@@ -521,7 +519,7 @@ html {
     font-size: 1.7rem;
     border: 1px solid gray;
     border-radius: 1rem;
-    width: 23rem;
+    width: 30rem;
     height: 5rem;
     cursor: pointer;
 }
@@ -541,7 +539,7 @@ html {
     color: #ffffff;
     border: 1px solid gray;
     border-radius: 1rem;
-    width: 23rem;
+    width: 30rem;
     height: 5rem;
     cursor: pointer;
     animation: yourCustomAnimation .5s;
@@ -604,12 +602,12 @@ html {
     /*margin-left: 2rem;*/
 }
 
-.content-side-form__form > p:nth-of-type(1) {
-    margin-top: 2rem;
-}
+/*.content-side-form__form > p:nth-of-type(1) {*/
+    /*margin-top: 1rem;*/
+/*}*/
 
 .content-side-form__form > p:nth-of-type(5) {
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
 .content-side-form__form > p {
@@ -620,13 +618,17 @@ html {
 
 .content-side-form__form-name, .content-side-form__form-email, .content-side-form__form-pass {
     margin: 1rem;
-    width: 25rem;
-    height: 5rem;
+    width: 31rem;
+    height: 4.3rem;
     background-color: #fff;
     font-size: 2rem;
-    border: 1px solid white;
-    border-radius: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
     padding-left: 2rem;
+}
+
+i {
+    font-size: 3rem;
 }
 
 .content-side-form__form-submit-btn {
@@ -643,32 +645,47 @@ html {
 }
 
 .content-side-form__form-submit-btn.active {
-    display: none;
-    /*display: flex;*/
+    /*display: none;*/
+    display: flex;
     width: 18rem;
     height: 5rem;
     background-color: #1da7c0;
     border-radius: 1rem;
     border: 1px solid #1da7c0;
 }
-/*____*/
 
+.req-checker {
+    display: none;
+}
 
-
-.animationClassYouAreAdding  {
+.req-checker.active {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 1rem;
     animation: yourCustomAnimation .5s;
     animation-fill-mode: both
 }
+
+/*____*/
+
+
+.animationClassYouAreAdding {
+    animation: yourCustomAnimation .5s;
+    animation-fill-mode: both
+}
+
 @keyframes yourCustomAnimation {
     from {
-        transform:scale(0.7);
-        opacity:0
+        transform: scale(0.7);
+        opacity: 0
     }
     to {
         transform: scale(1);
-        opacity:1
+        opacity: 1
     }
 }
+
 /*_____*/
 
 /*__________________form-blue-section end_________________________*/

@@ -54,3 +54,18 @@ $(document).ready(function () {
 //     let passwordFlag = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
 //     // let passwordFlag =
 // }
+
+$('#reg-form-submit').click(function () {
+    let required = $('input').filter('[required]:visible');
+    let allRequired = true;
+    required.each(function () {
+        if ($(this).val() === '') {
+            allRequired = false;
+        } else {
+            $('content-side-form__form-submit-btn').toggleClass('active');
+        }
+    });
+    if (!allRequired) {
+        $('.req-checker').toggleClass('active');
+    }
+});

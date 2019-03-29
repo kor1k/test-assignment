@@ -505,6 +505,10 @@ i {
     margin-left: 4rem;
 }
 
+.content-side-form__form > input:nth-of-type(4){
+    display: flex;
+}
+
 .content-side-form__form > p:nth-of-type(5) {
     font-size: 1rem;
 }
@@ -540,6 +544,8 @@ i {
     border-radius: 1rem;
     border: 1px solid #1da7c0;
     cursor: pointer;
+    animation: animation .5s;
+    animation-fill-mode: both
 }
 
 
@@ -554,6 +560,11 @@ i {
     cursor: pointer;
     animation: animation .5s;
     animation-fill-mode: both
+}
+
+.checkbox-container {
+    display: flex;
+    margin-bottom: 1rem;
 }
 
 /*.req-checker {*/

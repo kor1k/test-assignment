@@ -48,12 +48,12 @@ $(document).ready(function () {
     });
 });
 
-// function validationPatterns() {
-//     let nameFlag = /^([a-zA-Z]{3,16})$/;
-//     let emailFlag = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-//     let passwordFlag = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-//     // let passwordFlag =
-// }
+function validationPatterns() {
+    let nameFlag = /^([a-zA-Z]{3,16})$/;
+    let emailFlag = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    let passwordFlag = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+    // let passwordFlag =
+}
 
 $('#reg-form-submit').click(function () {
     let required = $('input').filter('[required]:visible');

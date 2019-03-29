@@ -641,6 +641,8 @@ i {
     background-color: white;
     border-radius: 1rem;
     border: 1px solid #1da7c0;
+    cursor: pointer;
+
     /*color: ;*/
 }
 
@@ -652,6 +654,8 @@ i {
     background-color: #1da7c0;
     border-radius: 1rem;
     border: 1px solid #1da7c0;
+    cursor: pointer;
+
 }
 
 .req-checker {

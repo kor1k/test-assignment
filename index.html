@@ -80,7 +80,7 @@
                 <!--<p class="req-checker">Заполните все поля</p>-->
                 <p>Ваше имя:</p>
                 <input required class="content-side-form__form-name" name="input_name" id="form_name" type="text"
-                       pattern="[A-Za-z]"
+                       pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
                        minlength="3"
                        placeholder="Имя">
                 <p>Email:</p>

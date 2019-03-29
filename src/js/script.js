@@ -48,24 +48,48 @@ $(document).ready(function () {
     });
 });
 
-function validationPatterns() {
-    let nameFlag = /^([a-zA-Z]{3,16})$/;
-    let emailFlag = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    let passwordFlag = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-    // let passwordFlag =
-}
-
 $('#reg-form-submit').click(function () {
-    let required = $('input').filter('[required]:visible');
-    let allRequired = true;
-    required.each(function () {
-        if ($(this).val() === '') {
-            allRequired = false;
-        } else {
-            $('content-side-form__form-submit-btn').toggleClass('active');
-        }
+
+    $('#modal').addClass('open');
+    $('.overlay').addClass('show');
+    // $("#form_phone").val('');
+    // $("#form_email").val('');
+    // $("#form_email").val('');
+
+    $('.close, .overlay').click(function () {
+        $('.overlay').removeClass('show');
+        $('#modal').removeClass('open');
     });
-    if (!allRequired) {
-        $('.req-checker').toggleClass('active');
+})
+
+// function validationPatterns() {
+//     let nameFlag = /^([a-zA-Z]{3,16})$/;
+//     let emailFlag = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+//     let passwordFlag = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+//     // let passwordFlag =
+// }
+
+// $('#form-fields__inputs > input').click(function () {
+//     let required = $('input').filter('[required]:visible');
+//     let allRequired = true;
+//     required.each(function () {
+//         if ($(this).val() === '') {
+//             allRequired = false;
+//         } else {
+//             $('content-side-form__form-submit-btn').toggleClass('active');
+//         }
+//     });
+//     if (!allRequired) {
+//         $('.req-checker').toggleClass('active');
+//     }
+// });
+
+$('#form-fields__inputs > input').on('keyup', function () {
+    if ($('#form_name').val() !== "" && $('#form_email').val() !== "" && $('#form_pass').val().length >= 6 && $('#form_checkbox').is(':checked')) {
+        $('.content-side-form__form-submit-btn').addClass('active');
+    } else {
+        $('.content-side-form__form-submit-btn').removeClass('active');
     }
 });
+
+console.log($('#form-fields__inputs > input'));

@@ -83,8 +83,9 @@
                        minlength="3"
                        placeholder="Имя">
                 <p>Email:</p>
+                <!--pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"-->
                 <input class="content-side-form__form-email form" name="input_email" id="form_email"
-                       required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                       required
                        type="email"
                        placeholder="Email">
                 <p>Придумайте пароль:</p>
@@ -92,13 +93,25 @@
                        type="password"
                        minlength="6"
                        placeholder="Пароль">
-                <p>Регистрируясь вы потдверждаете что вам уже исполнилось 18 лет и вы ознакомились с уловиями пользования сайтом</p>
-                <input type="checkbox" required>
+                <p>Регистрируясь вы потдверждаете что вам уже исполнилось 18 лет и вы ознакомились с уловиями
+                    пользования сайтом</p>
+                <input type="checkbox" id="form_checkbox" required>
                 <input class="content-side-form__form-submit-btn" id="reg-form-submit" name="submit" type="submit"
                        value="Продолжить"/>
             </form>
         </div>
     </div>
+    <!--Modal window start-->
+    <!--<div class="overlay"></div>-->
+    <!--<div id="modal" class="modal-wrapper">-->
+    <!--<span class="close">&#x2715;</span>-->
+    <!--<p class="modal-form-text">-->
+    <!--Your credentials have been successfully sent. We will contact you-->
+    <!--shortly.-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--Modal window end-->
+
     <!--Form blue section (third) end-->
 </div>
 

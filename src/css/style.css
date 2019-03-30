@@ -93,7 +93,7 @@ html {
     animation: scale-up-hor-right 0.2s ease-in-out both;
 }
 
-@-webkit-keyframes scale-up-hor-right {
+@keyframes scale-up-hor-right {
     0% {
         -webkit-transform: scaleX(0.4);
         transform: scaleX(0.4);
@@ -108,18 +108,24 @@ html {
     }
 }
 
-@keyframes scale-up-hor-right {
+.scale-up-hor-left {
+    -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@keyframes scale-up-hor-left {
     0% {
         -webkit-transform: scaleX(0.4);
         transform: scaleX(0.4);
-        -webkit-transform-origin: 100% 100%;
-        transform-origin: 100% 100%;
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
     }
     100% {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
-        -webkit-transform-origin: 100% 100%;
-        transform-origin: 100% 100%;
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
     }
 }
 
@@ -384,8 +390,9 @@ html {
 }
 
 .content-side-main-result.active {
-    animation: animation .5s;
-    animation-fill-mode: both
+    /*animation: animation .5s;*/
+    /*animation-fill-mode: both*/
+    animation: scale-up-hor-left 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 
@@ -497,7 +504,7 @@ html {
     align-items: center;
     background-color: white;
     font-size: 1.7rem;
-    border: 1px solid gray;
+    border: 1px solid #aaa9a9;
     border-radius: 1rem;
     width: 30rem;
     height: 5rem;
@@ -505,23 +512,23 @@ html {
 }
 
 .content-side-form__sex__male.active, .content-side-form__sex__female.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*align-items: center;*/
     background-color: #1da7c0;
-    font-size: 1.7rem;
+    /*font-size: 1.7rem;*/
     color: #ffffff;
-    border: 1px solid gray;
+    border: 1px solid #aaa9a9;
     border-radius: 1rem;
-    width: 30rem;
-    height: 5rem;
-    cursor: pointer;
+    /*width: 30rem;*/
+    /*height: 5rem;*/
+    /*cursor: pointer;*/
     animation: animation .5s;
     animation-fill-mode: both
 }
@@ -557,7 +564,7 @@ i {
     width: 35rem;
 }
 
-.content-side-form__form-name, .content-side-form__form-email, .content-side-form__form-pass {
+.form-input {
     margin: 1rem;
     width: 31rem;
     height: 4.3rem;
@@ -577,6 +584,8 @@ i {
     background-color: white;
     border-radius: 1rem;
     border: 1px solid #1da7c0;
+    color: #aaa9a9;
+    margin-left: 1rem;
     cursor: pointer;
     animation: animation .5s;
     animation-fill-mode: both
@@ -584,14 +593,15 @@ i {
 
 
 .content-side-form__form-submit-btn.active {
-    display: flex;
-    width: 18rem;
-    height: 5rem;
+    /*display: flex;*/
+    /*width: 18rem;*/
+    /*height: 5rem;*/
     background-color: #1da7c0;
-    border-radius: 1rem;
+    /*border-radius: 1rem;*/
     color: white;
-    border: 1px solid #1da7c0;
+    /*border: 1px solid #1da7c0;*/
     cursor: pointer;
+    margin-left: 1rem;
     animation: animation .5s;
     animation-fill-mode: both
 }
@@ -601,18 +611,20 @@ i {
     margin-bottom: 1rem;
 }
 
-/*.req-checker {*/
-/*display: none;*/
-/*}*/
+.form-checker {
+    display: none;
+    animation: animation .5s;
+    animation-fill-mode: both
+}
 
-/*.req-checker.active {*/
-/*display: inline-block;*/
-/*font-size: 1.5rem;*/
-/*color: red;*/
-/*margin-bottom: 1rem;*/
-/*animation: animation .5s;*/
-/*animation-fill-mode: both*/
-/*}*/
+.form-checker.active {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: red;
+    margin-bottom: 1rem;
+    animation: animation .5s;
+    animation-fill-mode: both
+}
 
 /*.overlay {*/
 /*display: none;*/

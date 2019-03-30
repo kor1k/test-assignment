@@ -21,20 +21,9 @@ $(document).ready(function () {
         $('.content-side-options__option').removeClass('active');
         $(this).toggleClass('active');
     });
-
-    $('.content-side-options__btn-to-forms').click(function () {
-        $('.content-side-main-result').toggleClass('not-active');
-    });
-
-    $('.content-side-form__sex__male, .content-side-form__sex__female').click(function () {
-        $('.content-side-form__sex__male, .content-side-form__sex__female').removeClass('active');
-        $(this).toggleClass('active');
-    });
-
     $('.content-side-options__option').click(function () {
         $('.content-side-options__btn-to-forms').toggleClass('active');
     });
-
     $('.content-side-options__option').click(function (e) {
         e.preventDefault();
         $('.content-side-options__option').removeClass('active');
@@ -45,6 +34,16 @@ $(document).ready(function () {
         $('.content-side-main-result__view-text').text('Людей обращает внимание на ' + $(event.target).attr('data-letter'));
     });
 });
+
+$('.content-side-options__btn-to-forms').click(function () {
+    $('.content-side-main-result').toggleClass('not-active');
+});
+
+$('.content-side-form__sex__male, .content-side-form__sex__female').click(function () {
+    $('.content-side-form__sex__male, .content-side-form__sex__female').removeClass('active');
+    $(this).toggleClass('active');
+});
+
 
 // function validationPatterns() {
 //     let nameFlag = /^([a-zA-Z]{3,16})$/;
@@ -57,8 +56,14 @@ $('#form-fields__inputs input').on('click keyup', function () {
         if ($('#form_name').val() !== "" && $('#form_email').val() !== "" && $('#form_checkbox').is(':checked') == true && $('#form_pass').val().length >= 6) {
             console.log($('#form_checkbox').is(':checked'));
             $('.content-side-form__form-submit-btn').addClass('active');
+            $('.form-checker').removeClass('active');
+            $('#reg-form-submit').click(function () {
+                $(this).location.reload(true);
+            })
         } else {
             $('.content-side-form__form-submit-btn').removeClass('active');
+            $('.form-checker').addClass('active');
+
         }
     }
 );

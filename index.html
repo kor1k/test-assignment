@@ -71,27 +71,28 @@
             voluptas?</p>
         <p class="content-side-form__title-before-input">Я ищу:</p>
         <div class="content-side-form__choose-sex">
-            <div class="content-side-form__sex__male"><i class="fas fa-male"></i> Вариант 1</div>
-            <div class="content-side-form__sex__female"><i class="fas fa-female"></i> Вариант 2</div>
+            <div class="content-side-form__sex__male" id="sex_male"><i class="fas fa-male"></i> Вариант 1</div>
+            <div class="content-side-form__sex__female" id="sex_female"><i class="fas fa-female"></i> Вариант 2</div>
         </div>
 
         <div class="wrapper-form-fields">
             <form id="form-fields__inputs" class="content-side-form__form">
-                <!--<p class="req-checker">Заполните все поля</p>-->
+                <p class="form-checker">Заполните верно все поля</p>
                 <p>Ваше имя:</p>
-                <input required class="content-side-form__form-name" name="input_name" id="form_name" type="text"
+                <input required class="content-side-form__form-name form-input" name="input_name" id="form_name"
+                       type="text"
                        pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
                        minlength="3"
                        placeholder="Имя">
                 <p>Email:</p>
                 <!--pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"-->
-                <input class="content-side-form__form-email" name="input_email" id="form_email"
+                <input class="content-side-form__form-email form-input" name="input_email" id="form_email"
                        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
                        required
                        type="email"
                        placeholder="Email">
                 <p>Придумайте пароль:</p>
-                <input required class="content-side-form__form-pass" name="input_pass" id="form_pass"
+                <input required class="content-side-form__form-pass form-input" name="input_pass" id="form_pass"
                        type="password"
                        minlength="6"
                        placeholder="Пароль">
